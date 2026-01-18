@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web-argo
+  name: web-argo
+  namespace: web-argo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-argo
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: web-argo
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
