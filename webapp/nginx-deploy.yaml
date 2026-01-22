@@ -21,8 +21,8 @@ spec:
         volumeMounts:
           - name: config
             mountPath: /usr/share/nginx/html/
-    volumes:
-      - name: config
-        configMap:
-          defaultMode: "420"
-          name: config
+      volumes:
+        - name: config
+          configMap:
+            defaultMode: "420"
+            name: config
