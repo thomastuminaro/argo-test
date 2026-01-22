@@ -4,4 +4,5 @@ metadata:
   name: config
   namespace: webapp
 data:
-  index.html: <h1>Welcome to webapp deployed by ArgoCD !</h1>
+  index.html: |
+      <h1>Welcome to webapp deployed by ArgoCD!</h1>
