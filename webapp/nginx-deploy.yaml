@@ -24,4 +24,5 @@ spec:
     volumes:
       - name: config
         configMap:
+          defaultMode: "420"
           name: config
